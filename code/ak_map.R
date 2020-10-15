@@ -13,3 +13,5 @@ ggplot() +
   coord_map(xlim = c(-165, -145), ylim = c(54, 61)) +
   scale_x_continuous(breaks = seq(-165, -145, 2.5)) +
   funcr::theme_report()
+
+ggsave("figs/akmap.png", dpi = 200, height = 4, width = 5, units = "in")
